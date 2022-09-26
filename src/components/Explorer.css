@@ -1,0 +1,134 @@
+
+.explorer {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: var(--background);
+    /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%); */
+}
+
+.explorer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+.explorer .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.explorer .left p {
+    margin: 1.5rem 0;
+}
+
+.explorer .left .btn {
+    align-self: flex-start;
+}
+
+.explorer .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.explorer .right .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 22px;
+    margin: .4rem;
+    min-width: 550px;
+    height: 110px;
+    border-radius: 24px;
+    border: 1px solid #d3d3d3;
+    box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px;
+    text-align: center;
+}
+
+.explorer .right .card:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 24px;
+}
+
+.explorer .card .top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 100px;
+}
+
+.explorer .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    min-width: 200px;
+}
+
+.explorer .card .change{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 120px;
+}
+
+.explorer .card .change span{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+.explorer .right img {
+    width: 50px;
+    margin: auto;
+    padding: .2rem 0;
+}
+
+.explorer .icon {
+    font-size: 36px;
+    margin: auto;
+    padding-top: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.explorer .price {
+    font-size: 30rem;
+}
+
+
+.explorer span {
+    font-size: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+@media screen and (max-width: 940px) {
+    .explorer .container {
+        grid-template-columns: 1fr;
+    }
+
+    .explorer .left .btn {
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 478px) {
+    .explorer .container .right .card {
+        width: 100%;
+    }
+}

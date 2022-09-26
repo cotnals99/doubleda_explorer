@@ -1,0 +1,46 @@
+
+.appDown .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.appDown .left {
+    text-align: center;
+}
+
+.image-left {
+    width: 300px;
+    cursor: pointer;
+}
+
+.image-left:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.appDown .right h2 {
+    margin-bottom: 4rem;
+}
+
+
+.appDown .right p {
+    font-size: 1rem;
+}
+
+.appDown .app-container {
+    margin-top: 2rem;
+}
+
+.image-right {
+    width: 200px;
+}
+
+
+@media screen and (max-width:940px) {
+    .appDown .container {
+        grid-template-columns: 1fr;
+    }
+}
